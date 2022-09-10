@@ -42,8 +42,7 @@
     animation-delay: 1s;
 }
 
-.about-page {
-
+.about-page, .contact-page {
     .text-zone {
         position: absolute;
         left: 10%;
@@ -116,18 +115,4 @@
             color: #fff;
         }
     }
-
-    // .image-zone {
-    //     .background-img {
-    //         position: absolute;
-    //         right: 15%;
-    //         top: 10%;
-    //         width: 35%;
-    //         vertical-align: middle;
-    //         margin: 0;
-    //         display: inline;
-    //         max-height: 90%;
-    //     }
-        
-    // }
 }
