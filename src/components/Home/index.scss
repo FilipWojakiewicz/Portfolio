@@ -40,7 +40,12 @@
         }
 
         img {
-            width: 60px;
+            padding-left: 10px;
+            width: 50px;
+
+            &:hover {
+                content: url("../../assets/images/logo_no_background_black_yellow.png");
+            }
         }
     }
 

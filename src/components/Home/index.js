@@ -1,5 +1,6 @@
 import './index.scss'
-import LogoTitle from '../../assets/images/logo_no_background.png'
+import LogoTitle from '../../assets/images/logo_no_background_black_white.png'
+
 import { Link } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import PopupText from '../PopupText'
