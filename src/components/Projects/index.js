@@ -15,7 +15,7 @@ const Projects = () => {
     return (
         <>
         <div className='container projects-page'>
-            <ParticleSnow></ParticleSnow>
+            {/* <ParticleSnow></ParticleSnow> */}
             <div className='main-zone'> 
                 <div className='project-zone'>
                     <div>

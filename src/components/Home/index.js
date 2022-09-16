@@ -1,5 +1,9 @@
 import './index.scss'
 import LogoTitle from '../../assets/images/logo_no_background_green_white.png'
+import About from '../About';
+import Contact from '../Contact';
+import Skills from '../Skills';
+import Projects from '../Projects';
 
 import { Link } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
@@ -21,7 +25,7 @@ const Home = () => {
         <>
         <div className='container home-page'>
             <div className='tsparticles2'>
-                <ParticleSnow></ParticleSnow>
+                {/* <ParticleSnow></ParticleSnow> */}
             </div>
             <div className='text-zone'>
                 <h1>
@@ -44,6 +48,19 @@ const Home = () => {
         </div>
 
         <Loader></Loader>
+
+        {/* <div className='test'>
+            <About></About>
+        </div>
+        <div className='test2'>
+            <Skills></Skills>
+        </div>
+        <div className='test3'>
+            <Projects></Projects>
+        </div>
+        <div className='test4'>
+            <Contact></Contact>
+        </div> */}
         </>
     );
 }

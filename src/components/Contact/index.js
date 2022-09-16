@@ -56,7 +56,7 @@ const Contact = () => {
         <>
         <div className='container contact-page'>
             <div className='tsparticles2'>
-                <ParticleSnow></ParticleSnow>
+                {/* <ParticleSnow></ParticleSnow> */}
             </div>
             <div className='text-zone'>
                 <h1>

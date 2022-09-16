@@ -4,42 +4,26 @@ import { useCallback } from "react";
 import './index.scss'
 
 const ParticleSnow = () => {
-
-        const particlesInit = useCallback(async (engine) => {
-        console.log(engine);
-        await loadFull(engine);
-    }, []);
-
-    const particlesLoaded = useCallback(async (container) => {
-        await console.log(container);
-    }, []);
-
     return (
         <Particles
           className='tsparticles2'
           id="tsparticles2"
-          init={particlesInit} 
-        loaded={particlesLoaded} 
           options={{
+            // smooth: {
+            //   enable: true
+              
+            // },
+            fullScreen: {
+              enable: false
+            },
             backgroundMode: {
               enable: true,
-              zIndex: -10000
+              zIndex: 1
             },
             fpsLimit: 30,
-            interactivity: {
-              detectsOn: "canvas",
-            },
             particles: {
               color: { value: "#fff" },
-              links: {
-                color: "#ffffff",
-                distance: 500,
-                enable: false,
-                opacity: 0.4,
-                width: 2
-              },
               move: {
-                // attract: { enable: false, rotateX: 600, rotateY: 1200 },
                 direction: "bottom",
                 enable: true,
                 outMode: "out",
@@ -48,7 +32,7 @@ const ParticleSnow = () => {
                 speed: 2,
                 straight: false
               },
-              number: { density: { enable: true, area: 800 }, value: 100 },
+              number: { density: { enable: true, area: 800 }, value: 110 },
               opacity: {
                 random: true,
                 value: 0.2

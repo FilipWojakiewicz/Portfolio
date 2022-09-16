@@ -1,5 +1,4 @@
 .logo-container {
-    z-index: 0;
     width: 700px;
     height: 300px;
     position: absolute;
@@ -22,7 +21,7 @@
     right: -200%;
     left: 0;
     margin: auto;
-    z-index: 1;
+    z-index: 111111;
 
     animation: logoInAnimation 2s linear forwards;
 }

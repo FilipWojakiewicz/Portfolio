@@ -1,12 +1,15 @@
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../Sidebar'
+import ParticleSnow from '../ParticleSnow'
 import './index.scss'
 
 const Layout = () => {
     return (
+        <>
         <div className='App'>
             <Sidebar />
-            <div className='page'>
+            <div className='page'>      
+                <ParticleSnow></ParticleSnow>  
                 <span className='tags top-tags'> &lt;body&gt;</span>
 
                 <Outlet  />
@@ -18,6 +21,7 @@ const Layout = () => {
                 </span>
             </div>
         </div>  
+        </>
     );
 }
 

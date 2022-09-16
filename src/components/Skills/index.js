@@ -16,7 +16,7 @@ const Skills = () => {
     return (
         <>
         <div className='container skills-page'>
-            <ParticleSnow></ParticleSnow>
+            {/* <ParticleSnow></ParticleSnow> */}
             <div className='text-zone'>
                 <h1>
                     <PopupText letterClass={letterClass} 

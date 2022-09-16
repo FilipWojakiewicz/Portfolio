@@ -15,7 +15,7 @@ const About = () => {
     return (
         <>
         <div className='container about-page'>
-            <ParticleSnow></ParticleSnow>
+            {/* <ParticleSnow></ParticleSnow> */}
             <div className='text-zone'>
                 <h1>
                     <PopupText letterClass={letterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']} idx={15}></PopupText>

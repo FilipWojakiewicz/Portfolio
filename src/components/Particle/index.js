@@ -4,49 +4,19 @@ import { loadFull } from "tsparticles";
 import { useCallback } from "react";
 
 const Particle = () => {
-
-        const particlesInit = useCallback(async (engine) => {
-        console.log(engine);
+    const particlesInit = useCallback(async (engine) => {
         await loadFull(engine);
     }, []);
-
-    const particlesLoaded = useCallback(async (container) => {
-        await console.log(container);
-    }, []);
-
 
     return (
         <Particles 
         id="tsparticles" 
         init={particlesInit} 
-        loaded={particlesLoaded} 
         options={{
             fullScreen: {
                 enable: false
               },
-            fpsLimit: 120,
-            interactivity: {
-                events: {
-                    onClick: {
-                        enable: false,
-                        mode: "push",
-                    },
-                    onHover: {
-                        enable: false,
-                        mode: "grab",
-                    },
-                    resize: false,
-                },
-                modes: {
-                    push: {
-                        quantity: 40,
-                    },
-                    repulse: {
-                        distance: 200,
-                        duration: 0.4,
-                    },
-                },
-            },
+            fpsLimit: 30,
             particles: {
                 color: {
                     value: "#ffffff",
