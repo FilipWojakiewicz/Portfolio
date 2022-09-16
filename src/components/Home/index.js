@@ -1,11 +1,12 @@
 import './index.scss'
-import LogoTitle from '../../assets/images/logo_no_background_black_white.png'
+import LogoTitle from '../../assets/images/logo_no_background_green_white.png'
 
 import { Link } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import PopupText from '../PopupText'
 import Logo from '../Home/Logo'
 import Loader from '../Loader'
+import ParticleSnow from '../ParticleSnow'
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -19,6 +20,9 @@ const Home = () => {
     return (
         <>
         <div className='container home-page'>
+            <div className='tsparticles2'>
+                <ParticleSnow></ParticleSnow>
+            </div>
             <div className='text-zone'>
                 <h1>
                     <span className={letterClass}>H</span>

@@ -3,6 +3,7 @@ import PopupText from '../PopupText'
 import Loader from '../Loader'
 import Background from '../../assets/images/background_image.png'
 import React, { useEffect, useState } from 'react';
+import ParticleSnow from '../ParticleSnow'
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -14,6 +15,7 @@ const About = () => {
     return (
         <>
         <div className='container about-page'>
+            <ParticleSnow></ParticleSnow>
             <div className='text-zone'>
                 <h1>
                     <PopupText letterClass={letterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']} idx={15}></PopupText>
@@ -42,6 +44,8 @@ const About = () => {
                     <h3>John Johnson</h3>
                 </div>
             </div>
+
+            <div className='blend'></div>
         </div>
         <Loader></Loader>
         </>

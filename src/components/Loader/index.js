@@ -1,10 +1,11 @@
 import { SunspotLoader } from "react-awesome-loaders";
+import './index.scss'
 
 const Loader = () => {
     return (
         <SunspotLoader
-            gradientColors={["#a3a3a3", "#ffd700"]}
-            shadowColor={"#ffd700"}
+            gradientColors={["#93ffbc", "#03d3fc"]}
+            shadowColor={"#93ffbc"}
             desktopSize={"128px"}
             mobileSize={"100px"}
             className="loader-active"

@@ -14,10 +14,20 @@
         img {
             display: block;
             margin: 8px auto;
-            width: 80px;
+            width: 60px;
             height: auto;
         }
     }
+
+    #tsparticles {
+        width: 100%;
+        height: 2000px;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        left: 0;
+        background: #181818;
+      }
 }
 
 nav {
@@ -43,7 +53,7 @@ nav {
         }
 
         &:hover {
-            color: #ffd700;
+            color: #93ffbc;
 
             svg {
                 opacity: 0;
@@ -100,7 +110,7 @@ nav {
 
     a.active {
         svg {
-            color: #ffd700;
+            color: #93ffbc;
         }
     }
 }
@@ -123,7 +133,7 @@ ul {
         line-height: 16px;
 
         &:hover svg {
-            color: #ffd700;
+            color: #93ffbc;
         } 
        } 
     }

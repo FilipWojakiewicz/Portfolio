@@ -1,19 +1,24 @@
 import './index.scss'
 import { Link, NavLink } from 'react-router-dom'
-import Logo from '../../assets/images/logo_no_background_black_white_yellow.png'
+import Logo from '../../assets/images/logo_no_background_green_white.png'
 import LogoText from '../../assets/images/text_logo_white.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser, faChartSimple, faBarsProgress} from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faHome, faUser, faChartSimple, faBarsProgress, faCircleInfo} from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import Particle from '../Particle'
 
 const Sidebar = () => {
     return (
         <>
         <div className='nav-bar'>
+        
             <Link className='logo' to='/'>
                 <img src={Logo} alt="logo" />
                 {/* <img src={LogoText} alt="textLogo" /> */}
             </Link>
+            <div>
+                <Particle></Particle>
+            </div>
             <nav>
                 <NavLink exact="true" activeclassname="active" to="/">
                     <FontAwesomeIcon icon={faHome} color='#4d4d4e' />
@@ -42,6 +47,11 @@ const Sidebar = () => {
                         <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
                     </a>
                 </li>
+                {/* <li>
+                    <a target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon icon={faCircleInfo} color='#4d4d4e' />
+                    </a>
+                </li> */}
                 {/* <li>
                     <a target="_blank" rel="noreferrer" href="https://www.google.com/?gws_rd=ssl">
                         <FontAwesomeIcon icon={faYoutube} color='#4d4d4e' />

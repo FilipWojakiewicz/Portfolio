@@ -1,5 +1,5 @@
 import './index.scss'
-import LogoTitle from '../../../assets/images/logo_no_background_black_white_yellow.png'
+import LogoTitle from '../../../assets/images/logo_no_background_green_white.png'
 
 const Logo = () => {
     return (

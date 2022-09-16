@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser'
 import { MapContainer, TileLayer, Marker, Popup, GeoJSON } from 'react-leaflet'
 import L from 'leaflet';
 import marker_colors from '../../assets/images/marker_colors.png'
+import ParticleSnow from '../ParticleSnow'
 
 
 const Contact = () => {
@@ -20,7 +21,7 @@ const Contact = () => {
     });
 
     var myStyle = {
-        "color": "#ffd700",
+        "color": "#93ffbc",
         "weight": 5,
         "opacity": 0.65
     };
@@ -54,6 +55,9 @@ const Contact = () => {
     return (
         <>
         <div className='container contact-page'>
+            <div className='tsparticles2'>
+                <ParticleSnow></ParticleSnow>
+            </div>
             <div className='text-zone'>
                 <h1>
                     <PopupText idx={15} letterClass={letterClass} strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']}/>

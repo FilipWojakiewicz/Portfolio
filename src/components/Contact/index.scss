@@ -44,7 +44,7 @@
         padding: 0 20px;
         box-sizing: border-box;
         border: 1px solid #000000;
-        border-radius: 10px;
+        border-radius: 2px;
     }
 
     textarea {
@@ -57,19 +57,19 @@
         padding: 20px;
         box-sizing: border-box;
         border: 1px solid #000000;
-        border-radius: 10px;
+        border-radius: 2px;
         min-height: 150px;
         resize: none;
     }
 
     textarea:focus {
         outline: none !important;
-        border-color: #ffd700;
+        border-color: #93ffbc;
     }
 
     input:focus {
         outline: none !important;
-        border-color: #ffd700;
+        border-color: #93ffbc;
     }
 
     input:-webkit-autofill{
@@ -80,17 +80,17 @@
     .flat-button {
         width: 150px;
         height: 50px;
-        color: #ffd700;
+        color: #93ffbc;
         background: 0 0;
         font-size: 16px;
         letter-spacing: 7px;
         text-decoration: none;
         padding: 8px 10px;
         padding-left: 17px;
-        border: 1px solid #ffd700;
+        border: 1px solid #93ffbc;
         float: right;
-        border-radius: 10px;
-        background: linear-gradient(to left, rgba(0,0,0,0.3) 50%, #ffd700 50%) right;
+        border-radius: 2px;
+        background: linear-gradient(to left, rgba(0,0,0,0.3) 50%, #93ffbc 50%) right;
         background-size: 200%;
         transition: .5s ease-out;
 
@@ -107,7 +107,7 @@
     bottom: 40px;
     right: 40px;
     z-index: 3000;
-    width: 267px;
+    width: 300px;
     padding: 20px;
     color: #fff;
     font-family: 'Helvetica';
@@ -117,29 +117,29 @@
     animation: fadeIn 1s 1.5s;
     animation-fill-mode: forwards;
     letter-spacing: 2px;
-    border-radius: 20px;
-    border: 2px solid #ffd700;
+    border-radius: 2px;
+    border: 2px solid #93ffbc;
 
     span {
         font-size: 16px;
         display: block;
         padding-top: 20px;
-        color: #ffd700;
+        color: #93ffbc;
     }
 }
 
 .map-wrap {
-    border-radius: 100px;
+    border-radius: 2px;
     background: #2C2C2C77;
     float: right;
     width: 53%;
-    height: 100%;
+    height: 98%;
     margin: 10px;
 }
 
 .leaflet-container {
-    border: 2px solid #ffd700;
-    border-radius: 100px;
+    border: 2px solid #93ffbc;
+    border-radius: 2px;
     width: 100%;
     height: 100%;
     position: relative;
@@ -150,15 +150,7 @@
 }
 
 .leaflet-layer {
-    
     filter: grayscale(100%) invert(100%);
-    // filter: grayscale(100%);
-    // filter: brightness(100%);
-    // filter: contrast(100%);
-    // filter: saturate(300%);
-    // filter: sepia(10%);
-    // filter: blur(10%);
-    // filter: opacity(10%);
   }
 
 .leaflet-popup {
