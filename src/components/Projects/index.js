@@ -34,7 +34,7 @@ const Projects = () => {
                     <div>
                         <h1>
                         <PopupText letterClass={letterClass} 
-                        strArray={['C', 'o', 'm', 'm', 'e', 'r', 't', 'i', 'a', 'l', ' ', 'p', 'r', 'o', 'j', 'e', 'c', 't','s']} 
+                        strArray={['C', 'o', 'm', 'm', 'e', 'r', 'c', 'i', 'a', 'l', ' ', 'p', 'r', 'o', 'j', 'e', 'c', 't','s']} 
                         idx={15}></PopupText>
                         </h1>
                     </div>
