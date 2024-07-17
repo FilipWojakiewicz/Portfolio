@@ -10,7 +10,11 @@ const Layout = () => {
             <Sidebar />
             <div className='page'>      
                 <ParticleSnow></ParticleSnow>  
-                <span className='tags top-tags'> &lt;body&gt;</span>
+                <span className='tags top-tags'>
+                    <span className='bottom-tag-html'>&lt;/html&gt;</span>
+                    <br/>
+                    &lt;/body&gt;
+                </span>
 
                 <Outlet  />
 

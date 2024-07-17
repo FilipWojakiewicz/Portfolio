@@ -1,9 +1,8 @@
 import './index.scss'
 import PopupText from '../PopupText'
 import Loader from '../Loader'
-import Background from '../../assets/images/background_image.png'
+import Profile from '../../assets/images/pic.png'
 import React, { useEffect, useState } from 'react';
-import ParticleSnow from '../ParticleSnow'
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -15,37 +14,30 @@ const About = () => {
     return (
         <>
         <div className='container about-page'>
-            {/* <ParticleSnow></ParticleSnow> */}
-            <div className='text-zone'>
+            <div className='text'>
                 <h1>
                     <PopupText letterClass={letterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']} idx={15}></PopupText>
                 </h1>
                 <p>
-                    asddddddddddddddddddddddddddddddddddddddddddddddddddd
-                    adssssssssssssssssssssssssssssssssssssssssssssssssssss
-                    dasssssssssssssssssssssssssssssssssssssssssssssssssssss
+                    asdddddddddddd ddddddddddddddddd dddddddddddd dddddddddd
+                    adssssssss sssssssssss ssssssssssssssssss sssssssssssssss
+                    dassssssssssss sssssssssssssss sssssssssss sssssssssssssss
                 </p>
                 <p>
-                    asddddddddddddddddddddddddddddddddddddddddddddddddddd
-                    adssssssssssssssssssssssssssssssssssssssssssssssssssss
-                    dasssssssssssssssssssssssssssssssssssssssssssssssssssss
+                    asdddddddd dddddddddddddddddd ddddddddd dddddddddddddddd
+                    adssssssssssssssssssssssssssssss ssssssssssssssssssssss
+                    dassssssssssssss ssssssssssss sssssssssss ssssssssssssssss
                 </p>
                 <p>
-                    asddddddddddddddddddddddddddddddddddddddddddddddddddd
-                    adssssssssssssssssssssssssssssssssssssssssssssssssssss
-                    dasssssssssssssssssssssssssssssssssssssssssssssssssssss
+                    asddddddddddddddddddd ddddddddddddddd ddddddddddddddddd
+                    adsssssssssssssssssss sssssss  ssssssssssssssssssss ssssss
+                    dasssssssssssssss ssssssssssssssssss sssssssssss sssssssss
                 </p>
             </div>
 
             <div className='image-zone'>
-                <img src={Background} className="background-img" alt="Background" width="500px" height="auto"/>
-                <div className='overlay'>
-                    <h2>First, solve the problem. Then, write the code.</h2>
-                    <h3>John Johnson</h3>
-                </div>
+                <img src={Profile} className="background-img" alt="Background"/>
             </div>
-
-            <div className='blend'></div>
         </div>
         <Loader></Loader>
         </>

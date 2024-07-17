@@ -4,10 +4,15 @@ import { useCallback } from "react";
 import './index.scss'
 
 const ParticleSnow = () => {
+  const particlesInit = useCallback(async (engine) => {
+    await loadFull(engine);
+  }, []);
+
     return (
         <Particles
           className='tsparticles2'
           id="tsparticles2"
+          init={particlesInit} 
           options={{
             // smooth: {
             //   enable: true

@@ -3,7 +3,7 @@ import LogoTitle from '../../../assets/images/logo_no_background_green_white.png
 
 const Logo = () => {
     return (
-        <div className='logo-container'>
+        <div className='logo-container' data-tilt data-tilt-full-page-listening data-tilt-reset="false">
             <img className='solid-logo' src={LogoTitle} alt='S'/>
         </div>
     )

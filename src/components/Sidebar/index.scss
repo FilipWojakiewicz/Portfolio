@@ -6,6 +6,10 @@
     top: 0;
     z-index: 3;
     min-height: 500px;
+    
+    button {
+        display: none;
+    }
 
     .logo {
         display: block;
@@ -76,11 +80,11 @@ nav {
             opacity: 0;
             transition: all 0.3s ease-out;
         }
+    }
 
-        &:first-child {
-            &::after {
-                content: 'HOME';
-            }
+    a.home-link {
+        &:after {
+            content: 'HOME';
         }
     }
 
@@ -130,10 +134,11 @@ ul {
         padding: 7px 0;
         display: block;
         font-size: 15px;
-        line-height: 16px;
+        line-height: 18px;
 
         &:hover svg {
             color: #93ffbc;
+            scale: 1.3;
         } 
        } 
     }

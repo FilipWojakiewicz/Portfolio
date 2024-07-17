@@ -55,25 +55,18 @@ const Contact = () => {
     return (
         <>
         <div className='container contact-page'>
-            <div className='tsparticles2'>
-                {/* <ParticleSnow></ParticleSnow> */}
-            </div>
             <div className='text-zone'>
                 <h1>
                     <PopupText idx={15} letterClass={letterClass} strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']}/>
                 </h1>
 
                 <p>
-                    fffffffffffffffffffffffffffffffffffffffffddddddddddddddddddddddddd
-                    fffffffffffffffffffffffffffffffffffffffffddddddddddddddddddddddddd
-                    ffffffffdddddddddddddddddddddddddffffffffddddddddddddddddddddddddd
-                    ffffffffdddddddddddddddddddddddddffffffffddddddddddddddddddddddddd
-                    ffffffffdddddddddddddddddddddddddffffffffddddddddddddddddddddddddd
+                    ffff fffffffff ffffff fffffff fffffffffff ffff ddddddddddd dddddddddddddd ffffffff fffff ffffffffffffffffff ffffffffffdddddddd dddddd ddddddddddd ffffffff dddddddddddddd dddddddddddffffffffdd dddddddddddddd dddddddd ffffffffd ddddddddd dddddddddddddddffffffffdd ddddddddddd ddddddddddd fffffff fdddddddddd ddddddddd dddd ddffffff ffdd dddddd ddddd ddddd ddddddd
                 </p>
                 
                 <br></br>
                 <div className='contact-form'>
-                    <form ref={refForm} onSubmit={sendEmail}> 
+                    <form ref={refForm} onSubmit={sendEmail} className='form'> 
                         <ul>
                             <li className='half'>
                                 <input type='text' name="name" placeholder='Name' required/>
@@ -98,18 +91,18 @@ const Contact = () => {
             </div>
 
             
-
             <div className='map-wrap'>
+                <div className='info-map' >
+                    <div className='info-card'>
+                        <div className='info-content'>
+                            <h3> Filip Wojakiewicz </h3>
+                            <p> Poland </p>
+                            <p> Wrocław </p>
+                            <p> wojakiewicz.filip@gmail.com </p>
 
-                    <div className='info-map'>
-                        Filip Wojakiewicz
-                        <br />
-                        Poland,
-                        <br />
-                        Wesoła 5 <br />
-                        Wilczyce <br />
-                        <span>wojakiewicz.filip@gmail.com</span>
+                        </div>
                     </div>
+                </div>  
                     <MapContainer center={[51.1428564, 17.1505418]} zoom={6} minZoom={2} zoomControl={false}>
                 <TileLayer 
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

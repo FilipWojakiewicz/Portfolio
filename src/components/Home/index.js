@@ -1,32 +1,27 @@
 import './index.scss'
 import LogoTitle from '../../assets/images/logo_no_background_green_white.png'
-import About from '../About';
-import Contact from '../Contact';
-import Skills from '../Skills';
-import Projects from '../Projects';
-
 import { Link } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import PopupText from '../PopupText'
 import Logo from '../Home/Logo'
 import Loader from '../Loader'
-import ParticleSnow from '../ParticleSnow'
+import VanillaTilt from 'vanilla-tilt';
+
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['i', 'l', 'i', 'p']
-    const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
-
+    const nameArray = ['i', 'l', 'i', 'p', ' ', 'W', 'o', 'j', 'a', 'k', 'i', 'e', 'w', 'i', 'c', 'z']
+    const jobArray = ['F', 'u', 'l', 'l', 's', 't', 'a', 'c', 'k', ' ', 'w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
+    
     useEffect(() => {
         setLetterClass('text-animate-hover')
     }, [])
 
+    VanillaTilt.init(document.querySelectorAll(".logo-container")); 
+
     return (
         <>
         <div className='container home-page'>
-            <div className='tsparticles2'>
-                {/* <ParticleSnow></ParticleSnow> */}
-            </div>
             <div className='text-zone'>
                 <h1>
                     <span className={letterClass}>H</span>
@@ -41,26 +36,13 @@ const Home = () => {
                 <br/>
                 <PopupText letterClass={letterClass} strArray={jobArray} idx={22}/>
                 </h1>
-                <h2> Frontend Developer / JavaScript Developer </h2>
+                <h2> .NET / C# / JavaScript / React </h2>
                 <Link to="/contact" className='flat-button'> CONTACT ME!</Link>
             </div>
             <Logo></Logo>
         </div>
 
         <Loader></Loader>
-
-        {/* <div className='test'>
-            <About></About>
-        </div>
-        <div className='test2'>
-            <Skills></Skills>
-        </div>
-        <div className='test3'>
-            <Projects></Projects>
-        </div>
-        <div className='test4'>
-            <Contact></Contact>
-        </div> */}
         </>
     );
 }
